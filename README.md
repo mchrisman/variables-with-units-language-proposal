@@ -3,17 +3,6 @@
 This seems like it should be so easy to add to most c-style languages, and so useful, that I don't get why it hasn't been done.
 
 ```
-unit horizontal_pixels int;
-unit vertical_pixels int;
-
-var horizontal_pixels x,dx;
-var vertical_pixels y,dy;
-
-x += dx;
-y += dx;   // fails without explicit cast
-```
-Or with declared conversion ratios:
-```
 unit inches:double;
 unit meters:39.37 inches;
 
@@ -28,4 +17,15 @@ let ceiling_height = (inches)roof_height/2;
 
 // assigns without conversion
 let ceiling_height = (double)roof_height/2;
+```
+Another use for this other than metric converstions:
+```
+unit horizontal_pixels int;
+unit vertical_pixels int;
+
+var horizontal_pixels x,dx;
+var vertical_pixels y,dy;
+
+x += dx;
+y += dx;   // fails without explicit cast
 ```

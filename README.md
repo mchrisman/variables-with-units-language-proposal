@@ -18,7 +18,7 @@ unit inches:double;
 unit meters:39.37 inches;
 
 var inches ceiling_height;
-var meters roof_height;
+var meters roof_height = (meters)10;
 
 // fails without cast
 let ceiling_height = roof_height/2; 
